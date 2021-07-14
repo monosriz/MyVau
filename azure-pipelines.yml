@@ -19,3 +19,9 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+
+- task: AzureStaticWebApp@0
+  inputs:
+      app_location: 'dist'
+      skip_app_build: true
+      azure_static_web_apps_api_token: 'f702f72ea273fef5f5d1c4695be74c0b5301093775c8d556139b36a971785b060-b01a3365-dc02-456d-b20a-15e8883adff000332330'
